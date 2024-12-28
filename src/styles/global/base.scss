@@ -1,0 +1,101 @@
+@font-face {
+  font-family: iranSans;
+  src: url("../../../public/assets/fonts/Dirooz.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "iranSans";
+}
+
+header {
+  border-bottom: 1px solid rgb(214, 214, 214);
+  height: 58px;
+  a {
+    padding: 16px 16px;
+    display: flex;
+    img {
+      width: 170px;
+    }
+  }
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    justify-content: center;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: #fff;
+    a{
+      width: 140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: middle;
+      height: 100%;
+      align-items: center;
+      svg {
+        width: 20px;
+        vertical-align: middle;
+      }
+
+    }
+    &:hover {
+      background-color: #c4eeec;
+      transition: all 0.3s;
+    
+  }
+    }
+    
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  nav {
+    width: 34%;
+    ul {
+      list-style-type: none;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      li {
+        a {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            color: #00302d;
+            transition: all 0.3s;
+            &::after{
+              opacity: 1;
+              width: 100%;
+              border-radius: 50px;
+              
+              
+            }
+
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            border: 2px solid #00302d;
+          }
+        }
+      }
+    }
+  }
+}

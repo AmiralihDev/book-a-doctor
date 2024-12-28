@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام </title>
+    <link rel="stylesheet" href="../src/styles/global/singup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body dir="rtl">
+
+    <div class="login-card">
+        <div class="column">
+            <h1>ثبت نام</h1>
+            
+            <form>
+                <div class="form-item">
+                    <input type="text" class="form-element" placeholder="نام و نام خانوادگی">
+                </div>
+                <div class="form-item">
+                    <input type="text" maxlength="11" class="form-element" placeholder="شماره موبایل">
+                </div>
+                <div class="form-item">
+                    <input type="password" class="form-element" placeholder="رمز عبور">
+                </div>
+                
+                <div class="form-checkbox-item">
+                    <input type="checkbox" id="rememberMe" checked>
+                    <label for="rememberMe">من را به خاطر بسپار</label>
+                </div>
+                <div class="flex">
+                    <button type="button">
+                        ثبت نام
+                    </button>
+                    <div class="rest">
+                        <p>شما اکانت دارید ؟</p>
+                        <a href="./login.html">ورود</a>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div class="column">
+            <h2>خوش امدید</h2>
+            <p> ایا اکانتی دارید ؟ دوست دارید وارد اکانت خود شوید ؟</p>
+            <a href="./login.html">ورود</a>
+        </div>
+    </div>
+    <script type="module" src="../src/scripts/auth/singUp.js"></script>
+    
+</body>
+
+</html>

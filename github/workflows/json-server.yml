@@ -1,0 +1,17 @@
+name: Run JSON Server
+on: push
+jobs:
+  json-server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install Dependencies
+        run: npm install
+      - name: Start JSON Server
+        run: |
+          npx json-server --watch db.json --port 5000 &
+          sleep infinity
